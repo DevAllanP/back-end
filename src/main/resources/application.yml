@@ -1,0 +1,12 @@
+spring:
+  profiles:
+    active: dev
+  jackson:
+    date-format: dd-MM-yyyy
+    time-zone: Europe/Paris
+logging:
+  file:
+    name: log/app-web.log
+  level:
+    fr.insys.commerce: trace
+    org.hibernate.SQL: debug

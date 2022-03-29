@@ -1,0 +1,38 @@
+stripe.secret.key: ----
+spring:
+  config:
+    activate:
+      on-profile: dev
+  datasource:
+    url: jdbc:mysql://localhost:3306/ecommerce?allowPublicKeyRetrieval=true&useSSL=false
+    password: admin
+    username: root
+    driver-class-name: org.mariadb.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    properties:
+      hibernate:
+        format_sql: true
+        dialect: org.hibernate.dialect.MySQL5Dialect
+    defer-datasource-initialization: true
+    show-sql: true
+  sql:
+    init:
+      mode: always
+      data-locations: "classpath:init_data.sql"
+jwt:
+  secret: waooappseckey
+  expiration: 86400000
+mail:
+  host: smtp.free.fr
+  port: 587
+  username: ----
+  password: ----
+  auth: true
+  ttls: false
+  commercial: ----
+  admin: ----
+
+
+ 
