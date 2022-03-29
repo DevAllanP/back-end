@@ -1,6 +1,6 @@
 # Back-End
 
-Back-End projet E-Commerce stagiaire MS-Java
+Back-End projet E-Commerce 
 
 ## Configuration
 
